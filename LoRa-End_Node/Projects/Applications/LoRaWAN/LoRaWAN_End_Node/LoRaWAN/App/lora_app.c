@@ -457,7 +457,8 @@ static void SendTxData(void)
   }
 
   AppData.BufferSize = i;
-  AppData.BufferSize = strcpy((char *)AppData.Buffer, (char *)"Hello LoRa");
+  strcpy((char *)AppData.Buffer, (char *)"Hello LoRa");
+  AppData.BufferSize = strlen("Hello LoRa");
 
   APP_LOG(TS_ON, VLEVEL_L, "LoRa Sending %d: %s\r\n", AppData.BufferSize, AppData.Buffer );
 #endif /* CAYENNE_LPP */

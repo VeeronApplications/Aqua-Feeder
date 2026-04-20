@@ -40,7 +40,7 @@ extern "C" {
 /* Exported constants --------------------------------------------------------*/
 
 /* LoraWAN application configuration (Mw is configured by lorawan_conf.h) */
-#define ACTIVE_REGION                               LORAMAC_REGION_EU868
+#define ACTIVE_REGION                               LORAMAC_REGION_IN865
 
 /*!
  * CAYENNE_LPP is myDevices Application server.
@@ -89,7 +89,7 @@ extern "C" {
 /*!
  * LoRaWAN default activation type
  */
-#define LORAWAN_DEFAULT_ACTIVATION_TYPE             ACTIVATION_TYPE_ABP //ACTIVATION_TYPE_OTAA yoga
+#define LORAWAN_DEFAULT_ACTIVATION_TYPE             ACTIVATION_TYPE_OTAA //ACTIVATION_TYPE_OTAA yoga
 
 /*!
  * User application data buffer size
